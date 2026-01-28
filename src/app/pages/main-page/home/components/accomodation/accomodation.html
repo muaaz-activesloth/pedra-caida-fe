@@ -1,0 +1,44 @@
+<section class="accommodation">
+    <!-- Decorative dots -->
+    <div class="decorations">
+        <!-- top right group -->
+        <span class="dot dot-big"></span>
+        <span class="dot dot-medium"></span>
+        <span class="dot dot-small"></span>
+
+        <!-- bottom left big -->
+        <span class="dot dot-bottom-left"></span>
+    </div>
+
+    <h2>Accommodation</h2>
+
+    <div class="row gap-2 mb-3 ms-0">
+        <button class="col-2 btn btn-primary"><i class="bi bi-building-fill"></i> APARTAMENTOS</button>
+        <button class="col-2 btn btn-secondary "><i class="bi bi-house-door-fill"></i> CHALÉS</button>
+    </div>
+
+    <div class="cards">
+        @for (room of rooms; track $index) {
+        <div class="room-card" [ngClass]="room.colorClass">
+
+            <img [src]="room.image" alt="">
+
+            <h3>{{ room.title }}</h3>
+
+            <div class="features">
+                @for (f of room.features; track $index; let last = $last) {
+                <ng-container>
+                    <i class="bi" [ngClass]="f.icon"></i> {{ f.text }}
+                    @if(!last){
+                    <span>&nbsp;</span>
+                    }
+                </ng-container>
+                }
+            </div>
+
+            <div class="price">{{ room.price }}</div>
+            <button>CONSULTAR</button>
+        </div>
+        }
+    </div>
+</section>

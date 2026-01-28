@@ -1,0 +1,38 @@
+<section>
+    <div>
+        <h1 class="">Nossas Atrações</h1>
+        <div class="d-flex">
+            <div class="card w-100 border-0 card-img-main text-white">
+                <img src="images/img-1.png" class="card-img" alt="Teleférico">
+
+                <div class="card-img-overlay d-flex align-items-end">
+                    <div class="overlay-content">
+
+                        <h3 class="card-title">Teleférico da Aventura</h3>
+
+                        <p class="card-text">
+                            Teleférico da Aventura O Teleférico da Aventura no Complexo da Pedra Caída
+                            é uma das melhores atrações do complexo. Com
+                        </p>
+
+                        <button class="btn btn-primary saiba-btn">Saiba mais</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flex-fill d-flex justify-content-end w-100 gap-2">
+                @for (item of carosalImgs; track $index) {
+                <div class="card border-0 card-img-main text-white">
+                    <img [src]="item.imgSrc" class="card-img" alt="Teleférico">
+
+                    <div class="card-img-overlay d-flex align-items-center justify-content-center vertical-text">
+                        <h1 class="fs-4">{{item.title}}</h1>
+                    </div>
+                </div>
+                }
+            </div>
+
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,46 @@
+/* Decorative circles */
+.decor-circle.big {
+    width: 70px;
+    height: 70px;
+    background: var(--blue-100);
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: -40px;
+}
+
+.decor-circle.small {
+    width: 18px;
+    height: 18px;
+    background: var(--blue-200);
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: 35px;
+}
+
+.vertical-text {
+    font-size: 1.5rem;
+    text-align: center;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: #cfcfcf;
+    font-weight: 600;
+}
+
+.description-text {
+    width: min(90ch, 90%);
+
+}
+
+.vertical-text {
+    font-size: 1.5rem;
+    text-align: center;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: #cfcfcf;
+    font-weight: 600;
+}
+
+
+

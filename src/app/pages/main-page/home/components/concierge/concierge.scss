@@ -1,0 +1,105 @@
+.portaria-section {
+  padding: 70px 0;
+}
+
+.portaria-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 0 20px;
+}
+
+/* Left text */
+
+.portaria-text {
+  flex: 1;
+}
+
+.portaria-text h2 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.portaria-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  max-width: 560px;
+}
+
+/* Right gallery */
+
+.portaria-gallery {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.images {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 25px;
+  justify-content:end;
+  align-items: end;
+}
+
+.images {
+  img {
+    width: 140px;
+    height: 160px;
+    object-fit:contain;
+    border-radius: 6px;
+  }
+
+  .img-center {
+    height: 200px;
+  }
+}
+
+
+
+/* Controls */
+
+.controls {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #333;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-btn:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .portaria-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .portaria-text p {
+    max-width: 100%;
+  }
+
+  .images {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

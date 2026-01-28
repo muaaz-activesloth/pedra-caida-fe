@@ -1,0 +1,41 @@
+  <section class="">
+        <div class="row">
+            <div class="col-6">
+                <h1 class="fs-4">Choose the date of your ticket.</h1>
+                <div>
+                    <mat-card class="demo-inline-calendar-card">
+                        <mat-calendar [(selected)]="selected"></mat-calendar>
+                    </mat-card>
+
+                </div>
+            </div>
+            <!-- --- details ---  -->
+            <div class="col-6 align-items-center d-flex flex-column">
+                <h1 class="fs-4">See details</h1>
+                <div class="details-section overflow-hidden">
+                    <div class="cards-wrapper">
+                        <div class="side-card"></div>
+                        <div class="main-card">
+                            <div class="pix-logo">
+                                <div class="pix-icon"></div>
+                                <div class="pix-text">pix</div>
+                            </div>
+                            <h4>Discount on PIX</h4>
+                            <p>5% discount on Pix payments</p>
+                            <button class="learn-btn">Learn More</button>
+                        </div>
+                        <div class="side-card"></div>
+                    </div>
+
+                    <div class="slider-arrows">
+                        <button class="arrow-btn">&lsaquo;</button>
+                        <button class="arrow-btn">&rsaquo;</button>
+                    </div>
+
+                </div>
+
+                <div></div>
+            </div>
+
+        </div>
+    </section>
