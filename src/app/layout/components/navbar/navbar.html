@@ -33,24 +33,17 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav align-items-center gap-4">
+                        @for (item of navItems; track $index) {
                         <li class="nav-item">
-                            <a class="nav-link active-nav-menu" aria-current="page" href="#">Home</a>
+                            @if (item.path) {
+                            <a class="nav-link" [routerLink]="item.path" routerLinkActive="active-nav-menu"
+                                [routerLinkActiveOptions]="{ exact: item.path === '/' }">
+                                {{ item.label }}
+                            </a>
+                            }
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Atrativos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Accommodation</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Reservations</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Prices</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Policies</a>
-                        </li>
+                        }
+
                         <li class="nav-item">
                             <button class="btn btn-contact px-4">Contato</button>
                         </li>
