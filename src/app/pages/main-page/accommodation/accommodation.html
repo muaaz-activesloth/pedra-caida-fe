@@ -1,0 +1,54 @@
+<section>
+    <div class="d-flex flex-column gap-5 mb-3">
+        <img class="img-fluid" src="images/acd-2.png" />
+
+        <!-- --- main body ---  -->
+        <div class="w-100 d-flex justify-content-between align-items-center nav-bar py-3 px-2">
+            @for (item of navOptions; track $index) {
+            <p class="text-white mb-0 p-2 cursor-pointer" [ngClass]="{'active-btn px-3': item?.isFirst}">{{item.title}}
+            </p>
+            }
+        </div>
+
+        <div class="">
+            <div class="row gap-2 align-items-center justify-content-center">
+                @for (room of rooms; track $index) {
+                <div class="col-4">
+                    <div class="room-card" [ngClass]="room.colorClass">
+
+                        <!-- Image -->
+                        <div class="room-image position-relative">
+                            <img [src]="room.image" class="img-fluid w-100" alt="{{ room.title }}" />
+                            <h3 class="room-title">
+                                {{ room.title }}
+                            </h3>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-4 text-white">
+                            <div class="d-flex flex-wrap gap-3 mb-3">
+                                @for (feature of room.features; track $index) {
+                                <div class="feature-item">
+                                    <i class="bi {{ feature.icon }}"></i>
+                                    <span>{{ feature.text }}</span>
+                                </div>
+                                }
+                            </div>
+
+                            <button class="btn btn-consultar">
+                                CONSULTAR
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+
+
+        <!-- --- main body ---  -->
+    </div>
+
+
+</section>

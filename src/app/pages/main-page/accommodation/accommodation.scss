@@ -1,0 +1,78 @@
+.nav-bar {
+    background-color: #133482;
+
+    .cursor-pointer {
+        cursor: pointer;
+    }
+
+    .active-btn {
+        background-color: #17A3DD;
+    }
+
+
+}
+
+.room-card {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.room-image {
+    padding: 12px;
+}
+
+.room-image img {
+    border-radius: 4px;
+}
+
+.room-title {
+    position: absolute;
+    bottom: 16px;
+    left: 24px;
+    color: #fdb515;
+    font-weight: 700;
+    font-size: 28px;
+    text-transform: lowercase;
+}
+
+/* Feature row */
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.feature-item i {
+    font-size: 16px;
+}
+
+/* Button */
+.btn-consultar {
+    background-color: #0dcaf0;
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 24px;
+    border-radius: 6px;
+}
+
+.btn-consultar:hover {
+    background-color: #0bb5d6;
+}
+
+/* Color variants (matching screenshot) */
+.room-blue {
+    background-color: #143a8a;
+}
+
+.room-navy {
+    background-color: #0f2f6d;
+}
+
+.room-cyan {
+    background-color: #1fa3d8;
+}
+
+.room-light-blue {
+    background-color: #25a6db;
+}
