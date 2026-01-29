@@ -17,9 +17,9 @@ export class Navbar {
   }[] = [
     { label: 'Home', path: '/' },
     { label: 'Atrativos', path: '/atrativos' },
-    { label: 'Accommodation', path: '/accommodation' },
-    { label: 'Reservations', path: '/reservations' },
-    { label: 'Prices', path: '/prices' },
-    { label: 'Policies', path: '/policies' },
+    { label: 'Hospedagem', path: '/hospedagem' },
+    { label: 'Reservas', path: '/reservas' },
+    { label: 'Precos', path: '/precos' },
+    { label: 'Politicas', path: '/politicas' },
   ];
 }

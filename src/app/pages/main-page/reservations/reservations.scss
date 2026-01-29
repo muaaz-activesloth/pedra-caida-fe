@@ -1,0 +1,73 @@
+
+.search-bar {
+  background: #163a8c;
+}
+
+/* -------------------
+   Dots Decoration
+-------------------- */
+
+.dot {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* Top right big */
+
+.dot-top-big {
+  width: 90px;
+  height: 90px;
+  background: #1da3d9;
+  top: 800px;
+  right: 10px;
+}
+
+/* Top right small */
+
+.dot-top-small {
+  width: 16px;
+  height: 16px;
+  background: #153b8a;
+  top: 780px;
+  right: 10px;
+}
+
+/* Middle */
+
+.dot-middle {
+  width: 28px;
+  height: 28px;
+  background: #1da3d9;
+  top: 430px;
+  left: 50%;
+}
+
+/* Bottom left big */
+
+.dot-bottom-big {
+  width: 160px;
+  height: 160px;
+  background: #003fa3;
+  bottom: 15px;
+  left: -140px;
+}
+
+/* Ensure content stays above dots */
+
+.hotel-policy-wrapper .container {
+  z-index: 2;
+  position: relative;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .dot {
+    display: none;
+  }
+
+  .search-bar {
+    justify-content: center;
+  }
+}

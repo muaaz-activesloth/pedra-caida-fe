@@ -1,0 +1,159 @@
+.portaria-section {
+  position: relative;
+  padding-bottom: 80px;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* ---------- DOTS ---------- */
+.dot {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.dot-1 {
+  width: 120px;
+  height: 120px;
+  background: #1da3d9;
+  left: -40px;
+  top: 300px;
+}
+
+.dot-2 {
+  width: 22px;
+  height: 22px;
+  background: #153b8a;
+  right: 120px;
+  top: 160px;
+}
+
+.dot-3 {
+  width: 60px;
+  height: 60px;
+  background: #1da3d9;
+  right: -20px;
+  bottom: 300px;
+}
+
+.dot-4 {
+  width: 16px;
+  height: 16px;
+  background: #153b8a;
+  left: 45%;
+  top: 480px;
+}
+
+/* ---------- HERO ---------- */
+
+.hero {
+  position: relative;
+  height: 380px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  left: 50px;
+  bottom: 80px;
+  color: #fff;
+  max-width: 400px;
+
+  h1 {
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+
+  p {
+    font-size: 14px;
+    opacity: 0.9;
+  }
+}
+
+/* ---------- CALENDAR ---------- */
+
+.calendar-box {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  width: 280px;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+
+/* ---------- PRICING ---------- */
+
+.pricing {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.price-card {
+  width: 320px;
+  padding: 24px;
+  border-radius: 18px;
+
+  h2 {
+    font-size: 32px;
+  }
+}
+
+.price-card.left {
+  background: #ffbf00;
+}
+
+.price-card.right {
+  border: 3px solid #1da3d9;
+  background: #fff;
+
+  table {
+    width: 100%;
+    font-size: 12px;
+    border-collapse: collapse;
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 6px;
+    }
+  }
+}
+
+/* ---------- GALLERY ---------- */
+
+.gallery {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+
+  img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+
+.nav-btn {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 6px 12px;
+  cursor: pointer;
+}

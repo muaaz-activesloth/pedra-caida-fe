@@ -3,6 +3,9 @@ import { MainPage } from './pages/main-page/main-page';
 import { Home } from './pages/main-page/home/home';
 import { Atrativos } from './pages/main-page/atrativos/atrativos';
 import { Accommodation } from './pages/main-page/accommodation/accommodation';
+import { Reservations } from './pages/main-page/reservations/reservations';
+import { Precos } from './pages/main-page/precos/precos';
+import { Politicas } from './pages/main-page/politicas/politicas';
 
 export const routes: Routes = [
   {
@@ -11,7 +14,10 @@ export const routes: Routes = [
     children: [
       { path: '', component: Home },
       { path: 'atrativos', component: Atrativos },
-      { path: 'accommodation', component: Accommodation },
+      { path: 'hospedagem', component: Accommodation },
+      { path: 'reservas', component: Reservations },
+      { path: 'precos', component: Precos },
+      { path: 'politicas', component: Politicas },
     ],
   },
 ];
