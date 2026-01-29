@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -8,6 +8,8 @@ import { RouterModule } from '@angular/router';
   styleUrl: './navbar.scss',
 })
 export class Navbar {
+  private router = inject(Router);
+
   navItems: {
     label: string;
     path?: string;
@@ -22,4 +24,8 @@ export class Navbar {
     { label: 'Precos', path: '/precos' },
     { label: 'Politicas', path: '/politicas' },
   ];
+
+  navigateToContact() {
+    this.router.navigateByUrl('/contato');
+  }
 }

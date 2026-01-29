@@ -6,6 +6,7 @@ import { Accommodation } from './pages/main-page/accommodation/accommodation';
 import { Reservations } from './pages/main-page/reservations/reservations';
 import { Precos } from './pages/main-page/precos/precos';
 import { Politicas } from './pages/main-page/politicas/politicas';
+import { Contato } from './pages/main-page/contato/contato';
 
 export const routes: Routes = [
   {
@@ -18,6 +19,8 @@ export const routes: Routes = [
       { path: 'reservas', component: Reservations },
       { path: 'precos', component: Precos },
       { path: 'politicas', component: Politicas },
+      { path: 'contato', component: Contato },
+      { path: '**', redirectTo: '' },
     ],
   },
 ];
